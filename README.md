@@ -1,7 +1,6 @@
-### BEFORE USING THESE SCRIPTS ####
+### BEFORE USING THESE SCRIPTS ###
 *-> change their names to a random file name in order to the machine's owner does not realize it's a malicious script, never forget to precede the file name
 with a "." (no quotes, obsviously), it will automatically hide the file, and not show them with a simple `ls` command by the machine's owner
-######
 
 1-> run the `.to.sh` script on the target machine, it will add a "sudo" alias inside the .bash_aliases file of the target machine
    1.1-> then, when the to.sh is succesfull executed, whenever the target write "sudo <randomcommand>" on his machine's terminal \
